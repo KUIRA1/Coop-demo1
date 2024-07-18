@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.7.0 on darwin)" generated="20240718 16:25:46.632" rpa="false" schemaversion="4">
+<suite id="s1" name="Tests" source="/Users/jkuira-eng/Documents/Coop-demo/headers/Tests.robot">
+<test id="s1-t1" name="TC-01- Navigate through all the headers available on the Co-operative Bank of Kenya homepage." line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240718 16:25:48.215" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<status status="PASS" starttime="20240718 16:25:48.214" endtime="20240718 16:26:01.297"/>
+</kw>
+<kw name="verify and click Header home" library="headers">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${HOME_HEADER_ID}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20240718 16:26:06.630" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240718 16:26:06.633" level="FAIL">Element '//a[@aria-current='page']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20240718 16:26:01.307" endtime="20240718 16:26:06.640"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HOME_HEADER_ID}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240718 16:26:06.643" endtime="20240718 16:26:06.643"/>
+</kw>
+<status status="FAIL" starttime="20240718 16:26:01.302" endtime="20240718 16:26:06.644"/>
+</kw>
+<kw name="verify and click Header personal banking" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.645" endtime="20240718 16:26:06.645"/>
+</kw>
+<kw name="verify and click Header Business" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.646" endtime="20240718 16:26:06.646"/>
+</kw>
+<kw name="verify and click Header cooperate" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.647" endtime="20240718 16:26:06.647"/>
+</kw>
+<kw name="verify and click Header Groups" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.650" endtime="20240718 16:26:06.650"/>
+</kw>
+<kw name="verify and click Header Investing" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.651" endtime="20240718 16:26:06.651"/>
+</kw>
+<kw name="verify and click Header Money Transfer" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.651" endtime="20240718 16:26:06.651"/>
+</kw>
+<kw name="verify and click Header Money Investor relationship" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.651" endtime="20240718 16:26:06.652"/>
+</kw>
+<kw name="verify and click Header Money Tresury Products" library="headers">
+<status status="NOT RUN" starttime="20240718 16:26:06.826" endtime="20240718 16:26:06.826"/>
+</kw>
+<doc>This test case will naviage to all headers of the page by clicking one at a time.
+verify that a page has opened can be added</doc>
+<status status="FAIL" starttime="20240718 16:25:48.210" endtime="20240718 16:26:06.827">Element '//a[@aria-current='page']' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="TC-02- Naviagate to platnum cartd and fill out the form to and click capture." line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240718 16:26:06.832" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<status status="PASS" starttime="20240718 16:26:06.831" endtime="20240718 16:26:18.312"/>
+</kw>
+<kw name="Navigate to Pesornal banking Menu" library="form">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${PERSONAL_BANKING}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20240718 16:26:23.795" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240718 16:26:23.825" level="FAIL">Element '//a[@href='https://www.co-opbank.co.ke/personal-banking/'][normalize-space()='Personal Banking']' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20240718 16:26:18.319" endtime="20240718 16:26:23.829"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PERSONAL_BANKING}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240718 16:26:23.833" endtime="20240718 16:26:23.833"/>
+</kw>
+<status status="FAIL" starttime="20240718 16:26:18.317" endtime="20240718 16:26:23.835"/>
+</kw>
+<kw name="Navigate to Cards sub menu" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.839" endtime="20240718 16:26:23.839"/>
+</kw>
+<kw name="Navigate to Cards sub menu" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.848" endtime="20240718 16:26:23.857"/>
+</kw>
+<kw name="Click on tell me more" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.883" endtime="20240718 16:26:23.884"/>
+</kw>
+<kw name="input text in the name field" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.885" endtime="20240718 16:26:23.885"/>
+</kw>
+<kw name="input text in the phone field" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.886" endtime="20240718 16:26:23.886"/>
+</kw>
+<kw name="input text in the town field" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.887" endtime="20240718 16:26:23.887"/>
+</kw>
+<kw name="input text in the text field" library="form">
+<status status="NOT RUN" starttime="20240718 16:26:23.888" endtime="20240718 16:26:23.889"/>
+</kw>
+<doc>Naviagate to platnum cartd and fill out the form to and click capture.</doc>
+<status status="FAIL" starttime="20240718 16:26:06.829" endtime="20240718 16:26:23.892">Element '//a[@href='https://www.co-opbank.co.ke/personal-banking/'][normalize-space()='Personal Banking']' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20240718 16:25:46.639" endtime="20240718 16:26:23.926"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240718 16:25:48.205" level="ERROR">Error in file '/Users/jkuira-eng/Documents/Coop-demo/headers/form.robot' on line 32: Creating keyword 'Navigate to Cards sub menu' failed: Keyword with same name defined multiple times.</msg>
+</errors>
+</robot>
